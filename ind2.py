@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+
 if __name__ == '__main__':
     Word = input("Введите словосочетание ")
     for i in range(len(Word)):
