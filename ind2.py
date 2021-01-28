@@ -19,25 +19,19 @@ if __name__ == '__main__':
         # Проверка слов на полное совпадение.
         if word1 == word2:
             print('Слова полностью совпали!')
-
             continue
         # Если слово 1 полностью совпало с начальными буквами слова 2
         elif word2.startswith(word1):
             print(f'Совпало {len(word1)} начальных букв.')
-
             continue
-
         # Если слово 2 полностью совпало с начальными буквами слова 1
         elif word1.startswith(word2):
             print(f'Совпало {len(word2)} начальных букв.')
-
             continue
-
         # Получение длины самого короткого слова (Максимального числа совпадений).
         elif len(word1) > len(word2):
             p = len(word2)
             print('Слова разные!')
-
         else:
             p = len(word1)
             print('Слова разные!')
